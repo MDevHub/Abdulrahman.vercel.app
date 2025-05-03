@@ -1,6 +1,6 @@
 .footer{
    width: 100vw;
-   height: 4rem;
+   /* height: 4rem; */
    background: #1A1A1A;
    display: flex;
    align-items: center;
@@ -11,4 +11,7 @@
 .footer{
    text-align: center;
    padding: 1rem;
+}
+.footer #React-icon{
+   
 }
