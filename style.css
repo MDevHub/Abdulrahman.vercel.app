@@ -7,8 +7,8 @@
    font-family: 'Poppins', sans-serif;
 }
 body{
-   background-color: #1a1a1afe;
-   color: white;
+   background-color: rgba(0, 0, 0, 0.18);
+   color:  #FFFF;
    overflow: hidden;
    overflow-y: scroll;
 }
