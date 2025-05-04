@@ -1,6 +1,7 @@
 #intro {
    height: calc(100vh - 4rem);
    width: 100vw;
+   top: 3rem;
    /* max-width: 75rem; */
    margin: 0 auto;
    overflow: hidden;
@@ -116,7 +117,8 @@
 
 @media screen and (max-width: 480px) {
    #intro{
-      padding: 0 2rem;
+      padding: 2rem 0;
+      top: 3rem;
    }
    .introText{
       font-size: 30px;
