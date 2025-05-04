@@ -6,9 +6,8 @@
    background: transparent;
    font-family: 'Poppins', sans-serif;
 }
-body{
-   background-color: rgba(0, 0, 0, 0.18);
+html, body{
+   background-color: rgba(0, 0, 0, 0.116);
    color:  #FFFF;
-   overflow: hidden;
-   overflow-y: scroll;
+   overflow-x: hidden;
 }

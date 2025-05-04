@@ -25,7 +25,7 @@
    top: 50%;
    left: 45%;
    transform: translate(-50%, -50%); 
-   z-index: -1;
+   /* z-index: -1; */
    object-fit: cover;
    height: 70vh; 
    width: 70vh; 
@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 840px) {
    #intro{
-      padding: 0 1rem;
+      padding: 0 2rem;
    }
    .bg {
       right: 9vw;
@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 480px) {
    #intro{
-      padding: 0;
+      padding: 0 2rem;
    }
    .introText{
       font-size: 30px;

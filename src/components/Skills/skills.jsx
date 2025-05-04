@@ -41,7 +41,8 @@ const Skills = () => {
 					<img src={AppDesign} alt="skillBar" className='skillBarImg'/>	
 					<div className="skillBartext">
 						<h2 id='h2text'>App Design</h2>
-						<p> I transform ideas into beautiful, functional applications by blending creativity with seamless user experience.""</p>
+						<p> I transform ideas functional applications by blending creativity, I build ideas you want
+							on the web.Strategic driven solutions for the best user experience</p>
 					</div>
 				</div>	
 			</div>
