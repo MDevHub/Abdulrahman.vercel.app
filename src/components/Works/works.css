@@ -63,6 +63,7 @@
    font-size: 1rem;
    cursor: pointer;
    font-weight: 400;
+   border-radius: 0.5rem;
 }
 .workBtn:hover{
    background: black;
