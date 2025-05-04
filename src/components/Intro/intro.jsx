@@ -3,9 +3,11 @@ import './intro.css'
 import bg from '../../assets/images/image.png'
 import btnImg from '../../assets/images/hireme.png'
 import { Link } from 'react-scroll'
+import ScrollFadeIn from '../ScrollFadeIn';
 
 const Intro = () => {
   return (
+   <ScrollFadeIn>
       <section id='intro'>
          <div className='introContent'>
             <h1 className='introText'> AbdulRahman Dev<span id='dot'>.</span></h1>
@@ -21,6 +23,7 @@ const Intro = () => {
             <img src={bg} alt="Profile" className='bg'/>
          </div>
       </section>
+   </ScrollFadeIn>
   )
 }
 

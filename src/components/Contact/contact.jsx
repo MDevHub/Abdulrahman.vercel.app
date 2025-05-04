@@ -11,7 +11,8 @@ const Contact = () => {
       e.preventDefault()
 
       emailjs
-         .sendForm('service_ofx32qg', 'template_kmq9a8q', form.current, '_jDzLmQ3di9dD6C0H')
+         .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,  process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+             form.current,  process.env.REACT_APP_EMAILJS_USER_ID)
          .then((result) => {
                console.log(result.text)
                e.target.reset()
