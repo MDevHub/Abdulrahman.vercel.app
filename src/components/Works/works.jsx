@@ -61,7 +61,7 @@ const Works = () => {
                <div>
                   <h2>03</h2>
                   <h1>Markko </h1>
-                  <p id='info'>A News magazine application where you get information, images and latest News on the most trending, popular, top rated, simiar News all up to date.</p>
+                  <p id='info'>We help you Unlock limitless possibilities with a feature-rich online marketplace platform. Launch fast and scale seamlessly with Markko.</p>
                   <a href="https://markkodev.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">Go to Project</a>
                </div>
             </div>
@@ -70,7 +70,7 @@ const Works = () => {
                <div>
                   <h2>04</h2>
                   <h1>Scape Walkers </h1>
-                  <p id='info'>A News magazine application where you get information, images and latest News on the most trending, popular, top rated, simiar News all up to date.</p>
+                  <p id='info'>A simple web for constructors where we shape buildings,interiors and landscape environments.</p>
                   <a href="https://mdevhub.github.io/scape-walks/" id='anchor' target="_blank" rel="noopener noreferrer">Go to Project</a>
                </div>
                <a href="https://mdevhub.github.io/scape-walks/" target="_blank" rel="noopener noreferrer">
@@ -104,7 +104,7 @@ const Works = () => {
                <div>
                   <h2>06</h2>
                   <h1>Clademy Web</h1>
-                  <p id='info'>A movie web application where you get information, images and trailer on the most trending, popular, top rated, simiar movies and Tv series all up to date.</p>
+                  <p id='info'>Get started today and bring all your learning tools together and manage multiple classes in one central destination.</p>
                   <a href="https://mdevhub.github.io/Clademy/" id='anchor' target="_blank" rel="noopener noreferrer">Go to Project</a>
                </div>
                <a href="https://mdevhub.github.io/Clademy/" target="_blank" rel="noopener noreferrer">

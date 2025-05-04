@@ -11,7 +11,7 @@ const Intro = () => {
       <section id='intro'>
          <div className='introContent'>
             <h1 className='introText'> AbdulRahman Dev<span id='dot'>.</span></h1>
-            <p className="introPara">I am a skilled <span id='front'>Frontend Developer </span> with experience in creating visually appealing and user friendly websites.</p>
+            <p className="introPara">I am an experienced <span id='front'>Frontend Developer </span> specializing in building visually engaging, user-friendly websites with a strong focus on usability and modern design principles.</p>
             <Link> 
                <button className="btn">
                   <img src={btnImg} alt="Hire" className='btnImg'/>
