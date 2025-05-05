@@ -17,7 +17,7 @@ const Contact = () => {
                console.log(result.text)
                e.target.reset()
                setEmailSent(true)
-               setTimeout(() => setEmailSent(false), 2000) // Hide message after 2 seconds
+               setTimeout(() => setEmailSent(false), 1500) // Hide message after 2 seconds
             }, (error) => {
                console.log('FAILED...', error.text)
          })
@@ -36,7 +36,7 @@ const Contact = () => {
                <input type="email" className="email" placeholder='Your Email' name='email' />
                <textarea className='msg' name="message" rows='5' placeholder='Your Message'></textarea>
                {emailSent && <div className="emailSentMsg">Email Sent! ✅</div>}
-               <button type='submit' className="submitBtn">Submit</button>
+               <button type='submit' className="submitBtn" value='send'>Submit</button>
             </form>
          </div>
       </section>
