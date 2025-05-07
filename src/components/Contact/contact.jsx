@@ -31,10 +31,10 @@ const Contact = () => {
 
 
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
-               <input type="text" className='name' placeholder='Your Name' name='name' />
-               <input type="tel" className="email" placeholder='Your Phone Number' name='tel' />
-               <input type="email" className="email" placeholder='Your Email' name='email' />
-               <textarea className='msg' name="message" rows='5' placeholder='Your Message'></textarea>
+               <input type="text" className='name' placeholder='Your Name' name='name' required/>
+               <input type="tel" className="email" placeholder='Your Phone Number' name='tel' required/>
+               <input type="email" className="email" placeholder='Your Email' name='email' required/>
+               <textarea className='msg' name="message" rows='5' placeholder='Your Message' required></textarea>
                {emailSent && <div className="emailSentMsg">Email Sent! ✅</div>}
                <button type='submit' className="submitBtn" value='send'>Submit</button>
             </form>
