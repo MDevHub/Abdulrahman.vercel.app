@@ -5,10 +5,12 @@ import Navbar from "./components/NavBar/navbar"
 import Skills from "./components/Skills/skills"
 import Works from "./components/Works/works"
 
+
 function App() {
 
   return (
-    <div className="App">
+    <div className="App bg-gradient-to-tl from-slate-100 to-gray-300" >
+
       <Navbar />
       <Intro />
       <Skills />

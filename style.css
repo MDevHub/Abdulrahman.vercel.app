@@ -1,13 +1,30 @@
+@import "tailwindcss";
+
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   text-decoration: none;
-   background: transparent;
    font-family: 'Poppins', sans-serif;
 }
 html, body{
-   background-color: rgba(0, 0, 0, 0.116);
-   color:  #FFFF;
    overflow-x: hidden;
+   /* scroll-behavior: smooth; */
+}
+
+/* Sliding underline effect */
+.underline-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-slide::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.underline-slide:hover::after {
+  width: 100%;
 }
