@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 flex items-center justify-between h-20 px-6 md:px-12 transition-colors duration-300 ${
-        isScrolled ? 'bg-gradient-to-tr from-slate-100 to-gray-300 bg-opacity-80 backdrop-blur-2xl shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-gradient-to-tr from-gray-400 to-gray-600 bg-opacity-80 backdrop-blur-2xl shadow-md' : 'bg-transparent'
       } text-lg`}
     >
       <div className='logo-div w-10 flex'>
