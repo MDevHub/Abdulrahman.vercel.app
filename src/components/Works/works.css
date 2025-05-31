@@ -43,9 +43,15 @@
    font-size: 1.1rem;
    font-family: sans-serif;
 }
+#revers{
+   object-fit: cover;
+}
+.works-div{
+   object-fit: cover;
+}
 
 .worksImg{
-   object-fit: cover;
+   object-fit: contain;
    height: 20rem ;
    margin: 0.5rem;
    max-width: 38rem;
@@ -105,6 +111,7 @@
    }
    #reverse{
       flex-direction: column-reverse;
+      object-fit: cover;
    }
  }
  
@@ -120,6 +127,9 @@
    }
 }
 @media screen and (max-width:585px) {
+   #works{
+   padding: 1rem 1rem;
+}
    .worksTitle{
       font-size: 2rem;
    
