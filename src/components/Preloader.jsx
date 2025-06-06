@@ -5,13 +5,13 @@ const Preloader = ({ onFinish }) => {
 
    useEffect(() => {
       if (count < 100) {
-         const timer = setTimeout(() => setCount(count + 1), 30)
+         const timer = setTimeout(() => setCount(count + 1), 10) // faster: 10ms instead of 30ms
          return () => clearTimeout(timer)
       } else {
-         // When done counting, wait 1s before triggering finish
+         // When done counting, wait 300ms instead of 1000ms before triggering finish
          const finishTimer = setTimeout(() => {
             onFinish()
-         }, 1000)
+         }, 300)
          return () => clearTimeout(finishTimer)
       }
    }, [count])

@@ -13,7 +13,7 @@ const navLinks = [
 const mobileLinks = [
   { id: 'intro', label: 'Home' },
   { id: 'skills', label: 'About' },
-  { id: 'resume', label: 'Resume', isExternal: true, href: 'https://your-resume-link.com' },
+  { id: 'resume', label: 'Resume', isExternal: true, href: 'https://docs.google.com/document/d/1ToPM6qWKewok0SAKHoLu_2s_s7I2gaSXkpik2lht-Sg/edit?usp=sharing' },
 ];
 
 const Navbar = () => {
@@ -70,7 +70,7 @@ const Navbar = () => {
         ))}
 
         <a
-          href='https://your-resume-link.com'
+          href='https://docs.google.com/document/d/1ToPM6qWKewok0SAKHoLu_2s_s7I2gaSXkpik2lht-Sg/edit?usp=sharing'
           target='_blank'
           rel='noopener noreferrer'
           className='items-center px-8 py-2 border border-black text-black cursor-pointer font-serif relative overflow-hidden group'
