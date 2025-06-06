@@ -46,15 +46,17 @@
 #revers{
    object-fit: cover;
 }
-.works-div{
-   object-fit: cover;
+.works-div {
+  overflow: hidden;     /* contain the image zoom */
+  border-radius: 12px;  /* round the container */
 }
 
-.worksImg{
-   object-fit: contain;
-   height: 20rem ;
-   margin: 0.5rem;
-   max-width: 38rem;
+.worksImg {
+  transition: transform 0.3s ease-in-out;  /* smooth zoom */
+}
+
+.works-div:hover .worksImg {
+  transform: scale(1.05);  /* only the image scales */
 }
 .workBtn{
    margin: 3rem auto;
@@ -77,9 +79,11 @@
    transition: all 0.8s ease;
 }
 .works-div {
-   position: relative;
-   display: inline-block;
- }
+  overflow: hidden;       /* keep the scaled image contained */
+  border-radius: 12px;    /* round the container */
+  position: relative;     /* keep your overlay working */
+}
+
  .works-div img{
    border-radius: 12px;
  }
