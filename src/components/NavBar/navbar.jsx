@@ -70,7 +70,7 @@ const Navbar = () => {
         ))}
 
         <a
-          href='https://docs.google.com/document/d/1ToPM6qWKewok0SAKHoLu_2s_s7I2gaSXkpik2lht-Sg/edit?usp=sharing'
+          href='https://docs.google.com/document/d/1xkuUjAgStglLklJPzXyRXem90tW-GAuGu8ikvSxiOGM/edit?usp=sharing'
           target='_blank'
           rel='noopener noreferrer'
           className='items-center px-8 py-2 border border-black text-black cursor-pointer font-serif relative overflow-hidden group'
