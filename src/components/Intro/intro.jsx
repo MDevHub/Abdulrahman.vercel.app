@@ -14,17 +14,6 @@ const Intro = () => {
         <div className="w-1/2 bg-slate-100"></div>
       </div>
 
-      {/* Blurred background image in center */}
-      <div
-        className="absolute w-[500px] h-[500px] lg:w-[600px] lg:h-[600px] bg-no-repeat bg-cover bg-center blur-3xl opacity-30 z-0"
-        style={{
-          backgroundImage: `url(${bg})`,
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
-
       {/* Main content with slower fade-in animation */}
       <div className="relative z-10 w-full max-w-6xl flex flex-col items-center px-6 text-center mt-[100px] animate-fadeIn">
         {/* Name and title */}
@@ -40,28 +29,45 @@ const Intro = () => {
 
         {/* Hire Me button */}
         <Link to="contact" smooth={true} offset={-70} duration={500}>
-          <button className="group relative inline-flex items-center px-8 py-3 rounded-full border border-black text-black font-medium cursor-pointer transition-all">
-            <span className="z-10">Hire Me</span>
+          <button
+            className="group relative inline-flex items-center px-8 py-3 rounded-full border-2 border-black text-black font-medium cursor-pointer overflow-hidden transition-colors duration-300 ease-in-out
+            hover:text-white focus:outline-none focus:ring-4 focus:ring-black/30"
+          >
+            <span className="relative z-10">Hire Me</span>
+
+            {/* Sliding background */}
+            <span
+              className="absolute left-0 top-0 w-full h-full bg-black rounded-full
+              -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+              aria-hidden="true"
+            />
           </button>
         </Link>
 
         {/* Scroll-down arrow */}
-        <div className="mt-12 animate-bounce">
-          <Link to="skills" smooth={true} offset={-70} duration={500}>
+        <div className="mt-12 flex justify-center">
+          <Link
+            to="skills"
+            smooth={true}
+            offset={-70}
+            duration={500}
+            aria-label="Scroll to skills"
+            className="cursor-pointer"
+          >
             <svg
-              className="w-8 h-8 text-black cursor-pointer"
+              className="w-6 h-6 text-black animate-pulse-down"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
               viewBox="0 0 24 24"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v14m0 0l-6-6m6 6l6-6" />
             </svg>
           </Link>
         </div>
       </div>
 
-      {/* Slower fade-in animation */}
+      {/* Slower fade-in animation + pulseDown animation */}
       <style>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
@@ -69,6 +75,14 @@ const Intro = () => {
         }
         .animate-fadeIn {
           animation: fadeIn 1.4s ease-out forwards;
+        }
+
+        @keyframes pulseDown {
+          0%, 100% { opacity: 1; transform: translateY(0); }
+          50% { opacity: 0.6; transform: translateY(6px); }
+        }
+        .animate-pulse-down {
+          animation: pulseDown 0.9s infinite;
         }
       `}</style>
     </section>
