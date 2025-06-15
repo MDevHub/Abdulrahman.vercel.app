@@ -5,6 +5,7 @@ import { FiExternalLink } from 'react-icons/fi'
 import Portfolio1 from '../../assets/images/portfolio-1.png'
 import Portfolio2 from '../../assets/images/portfolio-2.png'
 import Portfolio3 from '../../assets/images/portfolio-4.png'
+import wengdoImg from '../../assets/images/wengdo.png'
 import Portfolio4 from '../../assets/images/portfolio-44.png'
 import Portfolio5 from '../../assets/images/portfolio-5.jpeg'
 import Portfolio6 from '../../assets/images/portfolio-6.jpeg'
@@ -23,7 +24,7 @@ const Works = () => {
                   <div className='works-div' >
                      <img src={Portfolio1} alt="Portfolio1" className="worksImg" /> 
                      <div className="hover">
-                        <p>Go to Project</p>
+                        <p>Go to Project</p>=-pO 
                      </div> 
                   </div>
                </a>
@@ -80,16 +81,16 @@ const Works = () => {
             <div className='workSection'>
                <div>
                   <h2>04</h2>
-                  <h1>Pleno </h1>
-                  <p id='info'>An innovative drone tech company building autonomous systems and advanced control solutions for UAVs.</p>
-                  <a href="https://plenoelectronics.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
+                  <h1>Wengdo Meals </h1>
+                  <p id='info'>A modern food hub serving delicious meals with style showcasing top chefs, fresh flavors, and a seamless digital dining experience.</p>
+                  <a href="https://wengdomeals.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
                      <FiExternalLink style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }} />
                      Go to Project
                   </a>
                </div>
-               <a href="https://plenoelectronics.vercel.app/" target="_blank" rel="noopener noreferrer">
+               <a href="https://wengdomeals.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <div className="works-div">
-                     <img src={Portfolio3} alt="Portfolio3" className="worksImg" />
+                     <img src={wengdoImg} alt="Portfolio3" className="worksImg" />
                         <div className="hover">
                            <p>Go to Project</p>
                         </div>
@@ -98,6 +99,37 @@ const Works = () => {
             </div>
 
             <div className='workSection' id='reverse'>
+               <a href="https://plenoelectronics.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <div className="works-div">
+                     <img src={Portfolio3} alt="Portfolio3" className="worksImg" />
+                        <div className="hover">
+                           <p>Go to Project</p>
+                        </div>
+                     </div>
+                  </a>
+
+                  <div>
+                     <h2>05</h2>
+                     <h1>Pleno </h1>
+                     <p id='info'>An innovative drone tech company building autonomous systems and advanced control solutions for UAVs.</p>
+                     <a href="https://plenoelectronics.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }} />
+                        Go to Project
+                     </a>
+                  </div>
+            </div>
+
+            <div className='workSection'>
+               
+               <div>
+                  <h2>06</h2>
+                  <h1>Markko</h1>
+                  <p id='info'>A modern online marketplace platform built to help businesses showcase and sell their products efficiently with a sleek, user-friendly interface.</p>
+                  <a href="https://markkodev.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
+                     <FiExternalLink style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }} />
+                     Go to Project
+                  </a>
+               </div>
                <a href="https://markkodev.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <div className="works-div">
                      <img src={Portfolio5} alt="Portfolio5" className="worksImg" />
@@ -106,27 +138,11 @@ const Works = () => {
                         </div>
                   </div>
                </a>
-               <div>
-                  <h2>05</h2>
-                  <h1>Markko</h1>
-                  <p id='info'>A modern online marketplace platform built to help businesses showcase and sell their products efficiently with a sleek, user-friendly interface.</p>
-                  <a href="https://markkodev.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
-                     <FiExternalLink style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }} />
-                     Go to Project
-                  </a>
-               </div>
+               
             </div>
 
-            <div className='workSection'>
-               <div>
-                  <h2>06</h2>
-                  <h1>Scape Walkers</h1>
-                  <p id='info'>A web platform designed for construction and architecture teams to manage projects, showcase work, and collaborate on building solutions efficiently.</p>
-                  <a href="https://scapewalkers.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
-                     <FiExternalLink style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }} />
-                     Go to Project
-                  </a>
-               </div>
+            <div className='workSection' id='reverse'>
+               
                <a href="https://scapewalkers.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <div className="works-div">
                      <img src={Portfolio6} alt="Portfolio6" className="worksImg" />
@@ -135,6 +151,16 @@ const Works = () => {
                         </div>
                   </div>
                </a>
+               <div>
+                  <h2>07</h2>
+                  <h1>Scape Walkers</h1>
+                  <p id='info'>A web platform designed for construction and architecture teams to manage projects, showcase work, and collaborate on building solutions efficiently.</p>
+                  <a href="https://scapewalkers.vercel.app/" id='anchor' target="_blank" rel="noopener noreferrer">
+                     <FiExternalLink style={{ display: 'inline', marginRight: '6px', verticalAlign: 'middle' }} />
+                     Go to Project
+                  </a>
+               </div>
+               
             </div>
          </div>
          
