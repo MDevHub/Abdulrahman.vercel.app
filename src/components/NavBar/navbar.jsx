@@ -13,7 +13,7 @@ const navLinks = [
 const mobileLinks = [
   { id: 'intro', label: 'Home' },
   { id: 'skills', label: 'About' },
-  { id: 'resume', label: 'Resume', isExternal: true, href: 'https://docs.google.com/document/d/1ToPM6qWKewok0SAKHoLu_2s_s7I2gaSXkpik2lht-Sg/edit?usp=sharing' },
+  { id: 'resume', label: 'Resume', isExternal: true, href: 'https://docs.google.com/document/d/1ypZe_zwHp1FlfWae083jjPzwM4N6WZJfWbeaN0BGTmQ/edit?usp=sharing' },
 ];
 
 const Navbar = () => {
@@ -70,7 +70,7 @@ const Navbar = () => {
         ))}
 
         <a
-          href='https://docs.google.com/document/d/1xkuUjAgStglLklJPzXyRXem90tW-GAuGu8ikvSxiOGM/edit?usp=sharing'
+          href='https://docs.google.com/document/d/1ypZe_zwHp1FlfWae083jjPzwM4N6WZJfWbeaN0BGTmQ/edit?usp=sharing'
           target='_blank'
           rel='noopener noreferrer'
           className='items-center px-8 py-2 border border-black text-black cursor-pointer font-serif relative overflow-hidden group'
@@ -96,7 +96,7 @@ const Navbar = () => {
       {/* Mobile Sidebar */}
       <div
         ref={navMenuRef}
-        className={`fixed top-0 right-0 h-screen w-74 sm:w-98 bg-black z-50 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 h-screen w-full sm:w-[70%] bg-black z-50 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out md:hidden ${
           showMenu ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -115,7 +115,7 @@ const Navbar = () => {
         ></div>
 
         {/* Menu Links */}
-        <div className="relative flex flex-col space-y-6 w-full max-w-[280px] justify-center flex-grow">
+        <div className="relative flex flex-col space-y-6 w-full max-w-[full] justify-center flex-grow">
           {mobileLinks.map(({ id, label, isExternal, href }, idx) =>
             isExternal ? (
               <a
